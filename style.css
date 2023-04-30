@@ -1,0 +1,128 @@
+/* Importing fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Moon+Dance&family=Nunito&family=Rubik&family=Ubuntu&family=Work+Sans&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: cyan;
+}
+
+body h1 {
+    text-align: center;
+    margin-top: 17px;
+}
+
+#animation-container {
+    margin: 20px auto;
+    width: 90%;
+    height: 75vh;
+    border: 2px solid navy;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sun-image styling and its animation */
+.sun-img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: gold;
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    left: 35px;
+    animation: sun-img 8.2s 1;
+    animation-delay: 0.8s;
+    animation-direction: normal;
+}
+
+/* Animation of sun-img */
+@keyframes sun-img {
+    0% {
+        top: 30px;
+        left: 35px;
+    }
+
+    100% {
+        top: 0px;
+        left: 2000px;
+    }
+}
+
+#cloud-img-1 {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    animation: cloud-img-1 7s 1;
+    animation-delay: 0.4s;
+    animation-direction: normal;
+}
+
+/* Animation of cloud-img-1 */
+@keyframes cloud-img-1 {
+    0% {
+        top: 0px;
+        left: 60px;
+    }
+
+    100% {
+        top: 0px;
+        left: 1500px;
+    }
+}
+
+
+#cloud-img-2 {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 650px;
+    animation: cloud-img-2 6.7s 1;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+}
+
+/* Animation of cloud-img-2 */
+@keyframes cloud-img-2 {
+    0% {
+        top: 0px;
+        left: 650px;
+    }
+
+    100% {
+        top: 0px;
+        left: -400px;
+    }
+}
+
+
+#cloud-img-3 {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    animation: cloud-img-3 7.5s 1;
+    animation-delay: 0.4s;
+    animation-direction: normal;
+}
+
+/* animation of cloud-img-3 */
+@keyframes cloud-img-3 {
+    0% {
+        top: 0px;
+        left: 900px;
+    }
+
+    100% {
+        top: 0px;
+        left: -400px;
+    }
+}
